@@ -1,0 +1,20 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx postcss src/index.pcss -o _site/index.css",
+    "dev": "npx postcss src/index.pcss -o _site/index.css && npx eleventy --input=src/ --serve",
+    "start": "npx postcss src/index.pcss -o _site/index.css --watch && npx eleventy --input=src/ --serve "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.9.0",
+    "postcss": "^8.4.8",
+    "postcss-cli": "^9.1.0",
+    "postcss-nesting": "^10.1.3"
+  }
+}

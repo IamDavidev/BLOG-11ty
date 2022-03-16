@@ -1,0 +1,32 @@
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="{{ description }}" />
+  <link rel="stylesheet" href="/index.css" />
+  <title>{{ title }}</title>
+</head>
+<body>
+  <div class="dblogApp">
+    <header>
+      <nav>
+        dblogApp
+        <ul>
+          <li>
+            <a href="/posts/"> lists of posts </a>
+          </li>
+          <li>
+              <a href='/'>home </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class='container'>
+      {{ content | safe }}
+    </main>
+    <footer>
+      <a href="/posts/"> return to posts list </a>
+    </footer>
+  </div>
+</body>

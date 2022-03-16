@@ -1,0 +1,9 @@
+---
+ layout : layouts/base.njk
+ title : posts || dblog
+ description :  lista de los posts creaados en dblgo y los posts de la pagina principal
+ permalink : /posts/
+--- 
+
+ {% set postslist = collections.posts %}
+ {% include "postslist.njk" %}

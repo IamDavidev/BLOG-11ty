@@ -1,0 +1,7 @@
+--- 
+layout: layouts/base.njk 
+permalink: /posts/ 
+title : lists of posts || dblog
+---
+{% set postslist = collections.posts %}
+{% include "postlist.njk" %}
